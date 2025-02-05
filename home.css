@@ -1,0 +1,499 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 0px solid #713939;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 500px; /* Adjust width as needed */
+    width: 100%; 
+    margin-bottom: 20px;/* Makes sure it stretches according to the available space */
+}
+
+.search-bar input {
+    padding: 12px;
+    width: 80%; /* Adjusts width to occupy most of the bar */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; /* Makes the text inside the input box more readable */
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-bar button img {
+    width: 20px; /* Adjust the icon size */
+    height: 20px;
+}
+
+
+/* Navigation Menu */
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 30px; /* Adjust the gap between menu items */
+}
+
+.menu li:last-child {
+    margin-right: 0; /* Remove the margin from the last item */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+/* Subscribe Section */
+/* Subscribe Section */
+.subscribe {
+    background-color: black;
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+}
+
+.subscribe-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 800px; /* Max width to prevent it from stretching too much */
+}
+
+.subscribe-content p {
+    margin-right: 20px; /* Space between text and input */
+}
+
+.subscribe-input {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-input input {
+    padding: 10px;
+    border-radius: 0px;
+    border: none;
+    margin-right: 10px;
+    width: 250px;
+}
+.subscribe-link {
+    padding: 10px 9px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-link:hover {
+    color: rgb(77, 72, 72);
+}
+
+/* Food Order Section */
+.food-order {
+    text-align: left;
+    padding: 20px;
+    background-color: #ffffff;
+    height: 90px;
+}
+
+.food-order-container h2 {
+    font-family:'Monospace';
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-container button {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #ffffff;
+}
+
+/* Reduce size of the search icon */
+.search-container button img {
+    width: 20px; /* Adjust width as needed */
+    height: auto; /* Keep aspect ratio */
+}
+
+
+
+.food-category {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.food-category h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.category-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-item {
+    text-align: center;
+    width: 23%;
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.category-item p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.category-item nav {
+    margin-top: 10px;
+}
+
+.category-item nav a {
+    color: #ff450c;
+    text-decoration: none;
+}
+
+.category-item nav a:hover {
+    color: #000;
+}
+
+/* Container for images */
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Individual Dish Item */
+.dish-item {
+    width: 30%; /* Adjust the width to fit within a row */
+    text-align: center;
+}
+
+/* Clickable Image & Title */
+.dish-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dish-item a:hover {
+    transform: scale(1.05); 
+}
+
+/* Image Styling */
+.dish-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Dish Title Below Each Image */
+.dish-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* Find Dish Section - Full Black Background */
+.find-dish {
+    background-color: #000; /* Black background */
+    padding: 30px 10px;
+    text-align: left; /* Center content */
+    color: white;
+}
+
+/* Title Styling */
+.find-dish-title {
+    font-family: system-ui;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Container for Search Bar & Icons */
+.find-dish-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px;
+}
+
+/* Search Bar */
+.search-food {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+
+.search-food input {
+    padding: 5px 10px;
+    width: 200px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    height: 30px;
+}
+
+.search-food button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-food button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #222; /* Dark background */
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Left: Logo */
+.footer-image img {
+    width: 150px;
+}
+
+/* Center: Quick Links & Follow Us */
+.footer-links {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+}
+
+/* Quick Links & Follow */
+.quick-links, .follow-us {
+    text-align: left;
+}
+
+.quick-links h3, .follow-us h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.quick-links ul, .follow-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li, .follow-us ul li {
+    margin-bottom: 8px;
+}
+
+.quick-links ul li a, .follow-us ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.quick-links ul li a:hover, .follow-us ul li a:hover {
+    color: #f1c40f; /* Highlight effect */
+}
+
+/* Right: Subscription Box */
+.footer-subscribe {
+    text-align: center;
+}
+
+.footer-subscribe input {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.subscribe-btn {
+    background-color: #f1c40f;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #d4ac0d;
+}
+h6{
+    text-align: center;
+}
+
+/* About Page Styles */
+.about-content {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* Image Section */
+.about-image img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* About Text Section */
+.about-text {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.about-text h3 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Comment Section */
+.comment-section {
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Comment Text */
+.comment-section h2 {
+    font-size: 18px;
+    color: #888;
+    text-align: left;  /* Aligns the text to the left */
+    margin-bottom: 20px;
+}
+
+/* Comment Form Styles */
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin-left: 0; /* Aligns the form to the left */
+}
+
+.comment-form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;  /* Aligns the label text to the left */
+}
+
+.comment-form textarea, 
+.comment-form input {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start; /* Keeps the button aligned to the left */
+}
+
+.comment-form button:hover {
+    background-color: #efefef;
+    color: #000;
+}
