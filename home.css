@@ -80,6 +80,22 @@ body {
     color: #333;
     font-weight: bold;
 }
+
+.menu ul li a:hover {
+    color: #b0a7a0;
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+}
+
 /* Subscribe Section */
 /* Subscribe Section */
 .subscribe {
@@ -186,6 +202,17 @@ body {
 
 .food-category h2 {
     font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.soup-category {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.soup-category h2 {
+    font-size: 27px;
+    text-align:center;
     margin-bottom: 20px;
 }
 
@@ -496,4 +523,46 @@ h6{
 .comment-form button:hover {
     background-color: #efefef;
     color: #000;
+}
+
+/* Soup Category Section */
+
+.soup-category h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.rating {
+    font-size: 18px;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.star {
+    color: #ff9800;
+}
+
+.add-to-cart {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;  /* Blue color for the button */
+    padding: 6px 10px;
+    background-color: transparent;
+    border: 1px solid #141517;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #000;
+    transition: background-color 0.2s;
+}
+
+.add-to-cart:hover {
+    background-color: #ffffff;
+    color: rgb(5, 5, 5);
+}
+
+.add-to-cart span {
+    margin-left: 10px;
+    height: 20px;
+    font-size: 20px;  /* Arrow size */
 }
